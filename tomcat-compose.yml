@@ -1,0 +1,12 @@
+version: '3'
+services:
+  jenkins:
+    container_name: tomcat
+    image: tomcat
+    ports:
+     - "8081:8080"
+     - "8443:8443"
+    volumes:
+     - "/opt/tomcat:/usr/local/tomcat"
+     - /root/nginx:/usr/local/tomcat/ssl
+     - /root/nginx/server.xml:/usr/local/tomcat/conf/server.xml
