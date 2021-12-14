@@ -40,3 +40,7 @@ H/15 * * * *
 ```
 For generating the certs, followed the article
 [certs](https://mvysny.github.io/Using-self-signed-OpenSSL-pem-with-Docker-Tomcat/)
+
+### 7 Short URL Service Image
+![image](https://user-images.githubusercontent.com/58831659/146095286-717e9f08-6d3e-467d-865e-f9f73453fcb3.png)
+
