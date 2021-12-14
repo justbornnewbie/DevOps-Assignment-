@@ -1,4 +1,4 @@
-FROM tomcat:jdk8-corretto
-COPY /root/nginx/sample.war /usr/local/tomcat/webapps/
-EXPOSE 8081
-CMD ["catalina.sh", "run"]
+FROM tomcat:jdk11-corretto
+COPY sample.war /usr/local/tomcat/webapps/
+COPY server.xml /usr/local/tomcat/conf/
+ADD ssl /usr/local/tomcat/ssl/
