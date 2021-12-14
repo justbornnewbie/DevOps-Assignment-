@@ -5,6 +5,15 @@ pipeline {
     }
     stages 
     {
+        stage ('rebuild-docker-image')
+        {
+            steps
+            {
+                sh '''
+                docker build -t tomcat-v3 .
+                '''
+            }
+        }
         stage('deploy-tomcat')
         {
             steps
