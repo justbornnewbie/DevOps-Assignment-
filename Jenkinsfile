@@ -5,7 +5,7 @@ pipeline {
     }
     stages 
     {
-        stage ('rebuild-docker-image')
+        stage ('build')
         {
             steps
             {
